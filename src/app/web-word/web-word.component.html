@@ -1,0 +1,11 @@
+<app-word-inputs
+  [polices]="polices"
+  [selectedProperties]="selectedProperties"
+  (onInputsChange)="onInputsChange($event)"
+></app-word-inputs>
+
+<div>
+  <app-editable-text
+    [selectedProperties]="selectedProperties"
+  ></app-editable-text>
+</div>

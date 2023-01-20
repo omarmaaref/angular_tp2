@@ -1,0 +1,17 @@
+.select {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid lightgrey;
+  cursor: pointer;
+  transition: background 300ms ease, opacity 300ms ease, transform 300ms ease;
+
+  img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid lightgrey;
+  }
+}

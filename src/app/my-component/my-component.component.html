@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="main">
+    <h1>Couleur</h1>
+    <div class="color default" [style.backgroundColor]="color"></div>
+    <br />
+    <input
+      type="color"
+      placeholder="Enter color"
+      [(ngModel)]="color"
+      (ngModelChange)="onInputChange()"
+    />
+    <button (click)="onButtonClick()">back to default</button>
+  </div>
+  <div class="child">
+    <h3>child</h3>
+    <app-child
+      [color]="color"
+      (favoriteColorEvent)="setColor($event)"
+    ></app-child>
+  </div>
+</div>

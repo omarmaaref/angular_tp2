@@ -1,0 +1,17 @@
+<div class="container">
+  <!-- cv selector -->
+  <div class="selector">
+    <app-cv-selector
+      [list]="list"
+      (changeSelectedEvent)="changeSelected($event)" 
+    ></app-cv-selector>
+  </div>
+
+  <!-- cv display -->
+  <div class="cv">
+    <app-cv
+      [cv]="selectedCv"
+    ></app-cv>
+  </div>
+</div>
+ <br>

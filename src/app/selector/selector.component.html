@@ -1,0 +1,5 @@
+<select [(ngModel)]="currentValue" (ngModelChange)="onChange()" >
+  <option *ngFor="let police of items" [value]="police.value">
+    {{ police.label }}
+  </option>
+</select>

@@ -1,0 +1,19 @@
+<input
+  type="color"
+  name=""
+  id=""
+  [(ngModel)]="selectedProperties.color"
+  (ngModelChange)="onChange()"
+/>
+<input
+  type="number"
+  name=""
+  id=""
+  [(ngModel)]="selectedProperties.fontSize"
+  (ngModelChange)="onChange()"
+/>
+<app-selector
+  [items]="polices"
+  [currentValue]="selectedProperties.police.value"
+  (onItemChange)="onPoliceChange($event)"
+></app-selector>
